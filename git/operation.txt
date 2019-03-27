@@ -1,0 +1,5 @@
+git init    //第一次需要,初始化仓库
+git add *   //添加
+git commit -m "s"   //添加到本地仓库
+git remote add origin git@github.com:TomPrent/until.git  //关联到GitHub
+$ git push -u origin master    //提交

@@ -1,0 +1,21 @@
+1.为了测试方便，直接启动一个单节点工程
+2.将Eureka客户端工程打成一个jar包，然后用命令启动，启动两个实例，方便一会观察负载均衡的效果
+两行命令启动两个服务提供者的实例，如下：
+
+java -jar provider-0.0.1-SNAPSHOT.jar --server.port=8080  
+java -jar provider-0.0.1-SNAPSHOT.jar --server.port=8081
+
+此时，在服务注册中心可以看到有两个服务提供者注册成功了
+3.创建一个Spring Boot项目
+4.添加Eureka和Ribbon依赖(重点是添加了spring-cloud-starter-eureka和spring-cloud-starter-ribbon依赖)
+5.在入口类上添加@EnableDiscoveryClient注解，表示该应用是一个Eureka客户端应用
+6.提供RestTemplate的Bean(RestTemplate可以发起一个GET或者POST请求)
+在提供Bean的同时，添加@LoadBalanced注解，表示开启客户端负载均衡
+7.创建一个Controller类，并向Controller类中注入RestTemplate对象，
+同时在Controller中提供一个名为/ribbon-consumer的接口，在该接口中，
+通过刚刚注入的restTemplate来实现对HELLO-SERVICE服务提供的/hello接口进行调用
+8.application.properties中配置
+
+测试：
+1.启动之后，在Eureka中看到客户端
+2.向localhost:9000/ribbon-consumer地址发起请求，就可以看到工程中/hello接口返回的Hello World

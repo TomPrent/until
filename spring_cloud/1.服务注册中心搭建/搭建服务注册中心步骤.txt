@@ -1,0 +1,12 @@
+1.创建一个普通的Spring Boot工程   
+2.pom.xml文件中添加eureka-server的依赖
+3.启动一个服务注册中心,即在Spring Boot的入口类上添加一个@EnableEurekaServer
+4.配置文件application.yml（application.properties）
+
+测试
+1.打开http://localhost:1111
+2.设置Eureka客户端
+3.刷新http://localhost:1111，可以看到有一个服务已经注册成功
+
+
+这是一个单节点的，应该使用高可用服务注册中心，在这个基础上加以修改

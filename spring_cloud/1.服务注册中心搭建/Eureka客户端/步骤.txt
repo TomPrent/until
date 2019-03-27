@@ -1,0 +1,5 @@
+1.创建一个Spring Boot工程，在IntelliJ IDEA中创建的时候选中web
+2.添加Eureka依赖(maven)
+3.添加一个Controller，在该Controller中提供一个访问入口
+4.添加@EnableDiscoveryClient注解来激活Eureka
+5.application.properties文件中配置

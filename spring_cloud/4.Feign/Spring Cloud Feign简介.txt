@@ -1,0 +1,4 @@
+    Spring Cloud基于Netflix Feign整合了Ribbon和Hystrix，让开发工作变得更加简单，就像Spring Boot是对Spring+SpringMVC的简化一样。
+Spring Cloud Feign不仅在配置上大大简化了开发工作，同时还提供了一种声明式的Web服务客户端定义方式。
+    之前为了简化RestTemplate操作，将之封装在一个BookService中，但同时也发现BookService中的方法几乎都是模板式的，写起来很枯燥，
+Spring Cloud Feign对此进行了进一步的封装，简化了封装操作。

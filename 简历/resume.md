@@ -13,11 +13,11 @@
 - Github： [TomPrent]()
 
 - 期望职位：Java开发工程师
-- 期望薪资：10K
+- 期望薪资：12K
 
 # 工作经历
 + 浙江凌顶科技有限公司 2017.4~2018.4
-+ 杭州浙健健康管理有限公司 2018.5~至今
++ 杭州浙健健康管理有限公司 2018.5~2020.2
 
 ## 项目经验
 - [职业健康风险软件]()
@@ -50,10 +50,11 @@
 
 以下均为我熟练使用的技能
 
-- JavaEE框架：Hibernate/Spring/Spring cloud/Spring MVC/Struts2/Mybatis
+- JavaEE框架：Spring/Spring cloud/Spring MVC/Hibernate/Struts2/Mybatis
+- 权限框架：shiro/Spring Security
 - 关系型数据库：MySQL/Oracle
-- 非关系型数据库：Redis/MongoDB
-- 操作系统：Linux
+- 非关系型数据库：Redis/MongoDB/memcache
+- 操作系统：Windows/Linux
 - 前端相关：javascript/Jquery/ajax
 - 版本控制：Git/SVN/Maven
 
